@@ -7,7 +7,7 @@ const Icons = {
     Instagram,
     LinkedinSquare,
     Github,
-    Whatsapp
+    Whatsapp,
 }
 
 export default Icons
