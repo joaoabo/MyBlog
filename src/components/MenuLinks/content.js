@@ -4,7 +4,9 @@ const links = [
         url: "/",
     },
     {
-        label: "Sobre Min",
+        label: "Sobre Mim",
         url: "/about/",
     },
 ]
+
+export default links
