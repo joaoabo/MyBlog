@@ -1,18 +1,18 @@
 ---
-data : 2015-01-05 05:54:23
-Título : Lorem Lorem Ipsum
-descrição : E eu sou lorem certo lorem
-categoria : JS
-fundo : " #7AAB13 "
+date: 2015-01-03 05:54:23
+title : Duas coisas são infinitas
+description : E eu não tenho certeza sobre o universo.
+category : Diversos
+background : " #7AAB13 "
 ---
 
 #  Lorem ipsum
 
-Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse em urna ligula, uma volutpat mauris. Sed enim mi, [ adipiscing ](http://google.com) eu pulvinar vel, sodales vitae dui. : polegar para cima :  : sorriso :  : brilho :
+Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse em urna ligula, uma volutpat mauris. Sed enim mi, [ adipiscing ](http://google.com) eu pulvinar vel, sodales vitae dui. :thumbsup:  :smile:  :sparkler:
 
 ```javascript
 a = 3
-coloca um
+puts a
 ```
 
 ##  Fusce a metus eu
@@ -34,9 +34,9 @@ Pellentesque sed sapien lorem, em lacinia urna. Em hac habitasse platea dictumst
 
 - Lorem
 - Ipsum
-- Dor
-- Sente -se
-- ame
+- Dolor
+- Sit
+- amet
 
 ####  Sed enim mi
 

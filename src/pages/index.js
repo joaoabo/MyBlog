@@ -5,20 +5,22 @@ import Layout from "../components/Layout"
 import Seo from "../components/seo"
 import PostItem from "../components/PostItem"
 
-
 const IndexPage = () => {
-  const { allMarkdonwRemark } = useStatticQuery(graphql`
-    query MyQuery {
+  const { allMarkdownRemark } = useStaticQuery(graphql`
+    query PostList {
       allMarkdownRemark {
         edges {
           node {
-            frontmatter {
-              background
-              category
-              date(locale: "pt-br", formatString: "DD [de] MMM [de] YYYY")
-              description
-              title
+            fields {
+              slug
             }
+              frontmatter {
+                background
+                category
+                date(locale: "pt-br", formatString: "DD [de] MMM [de] YYYY")
+                description
+                title
+              }
             timeToRead
           }
         }
@@ -26,26 +28,30 @@ const IndexPage = () => {
     }
   `)
 
-  const postList = allMarkdonwRemark.edges
+  const postList = allMarkdownRemark.edges
 
   return (
     <Layout>
-    <Seo title="Home" />
-    {postList.map({
-      node: {
-        frontmatter: { background, category, date, description, title },
-        timeToRead
-      },
-    })}
-      <PostItem
-        slug="/about/"
-        category="Misc"
-        date="30 de Julho de 2019"
-        timeToRead="5"
-        title="Diga não ao Medium: tenha sua própria plataforma"
-        description="Algumas razões para você ter sua própria plataforma ao invés de soluções como o Medium."
-      />
-  </Layout>
+      <Seo title="Home" />
+      {postList.map(
+        ({  
+          node: {
+            frontmatter: { background, category, date, description, title },
+            timeToRead,
+            fields: { slug },
+          },
+        }) => (
+            <PostItem
+              slug={slug}
+              background={background}
+              category={category}
+              date={date}
+              timeToRead={timeToRead}
+              title={title}
+              description={description}
+            />
+        ))}
+    </Layout>
   )
 }
  
