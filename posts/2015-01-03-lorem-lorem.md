@@ -2,7 +2,7 @@
 date: 2015-01-03 05:54:23
 title : Duas coisas são infinitas
 description : E eu não tenho certeza sobre o universo.
-category : Diversos
+category : Misc
 background : " #7AAB13 "
 ---
 

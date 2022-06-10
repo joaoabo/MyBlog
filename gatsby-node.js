@@ -1,6 +1,19 @@
 const path = require("path")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+exports.sourceNodes = ({ actions, schema }) => {
+  const { createTypes } = actions
+
+  createTypes(`
+    type MarkdownRemarkFrontmatter {
+      image: String
+    }
+    type MarkdownRemark implements Node {
+      frontmatter: MarkdownRemarkFrontmatter
+    }
+  `)
+}
+
 // To add the slug field to each post
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -52,14 +65,3 @@ exports.createPages = ({ graphql, actions }) => {
     })
   })
 }
-/*
-exports.createPages = async ({ actions }) => {
-  const { createPage } = actions
-  createPage({
-    path: "/using-dsg",
-    component: require.resolve("./src/templates/using-dsg.js"),
-    context: {},
-    defer: true,
-  })
-}
-*/
