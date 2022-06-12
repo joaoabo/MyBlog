@@ -11,7 +11,7 @@ const Comments = ({ url, title }) => {
     <S.CommentsWrapper>
       <S.CommentsTitle>Comentários</S.CommentsTitle>
       <Disqus
-        shortname="willianjusten"
+        shortname="@joaoabo"
         identifier={completeURL}
         title={title}
         url={completeURL}
