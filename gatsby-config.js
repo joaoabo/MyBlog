@@ -16,6 +16,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+          shortname: `myblog-estudos-disqus-com`
+      }
+  },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -33,7 +39,23 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [],
+        plugins: [
+          {
+            resolve: "gatsby-remark-relative-images",
+            options: {
+              name: "uploads"
+            }
+          },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 960,
+              linkImagesToOriginal: false
+            },
+          },
+          `gatsby-remark-lazy-load`,
+          `gatsby-remark-prismjs`,
+        ],
       },
     },
     `gatsby-plugin-image`,
