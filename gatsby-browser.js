@@ -1,3 +1,6 @@
+import "lazysizes"
+
+
 /**
  * Implement Gatsby's Browser APIs in this file.
  *

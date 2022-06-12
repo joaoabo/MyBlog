@@ -10,10 +10,7 @@ background: " #7AAB13 "
 
 Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse em urna ligula, uma volutpat mauris. Sed enim mi, [ adipiscing ](http://google.com) eu pulvinar vel, sodales vitae dui. : polegar para cima :  : sorriso :  : brilho :
 
-```javascript
-a = 3
-puts a
-```
+![](/assets/img/web-developer.png)
 
 ## Fusce a metus eu
 
