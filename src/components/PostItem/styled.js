@@ -9,10 +9,9 @@ export const PostItemLink = styled(Link)`
     color: #1fa1f2;
   }
 `
-
+// border-bottom: 1px solid #38444d; caso deseja usar border nos posts
 export const PostItemWrapper = styled.section`
   align-items: center;
-  border-bottom: 1px solid #38444d;
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
