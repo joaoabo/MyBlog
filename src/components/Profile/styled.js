@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 export const ProfileWrapper = styled.section`
     color: #8899a6;
     display: flex;
+    margin-top: 60px;
     flex-direction: column;
 `
 
