@@ -27,10 +27,10 @@ const Profile = () => {
           <Avatar />
           <S.ProfileTitle>
             {title}
-            <S.ProfileDescription>{description}</S.ProfileDescription>
-            </S.ProfileTitle>
+          </S.ProfileTitle>
         </S.ProfileLink>
-        <S.ProfileAuthor>{author}</S.ProfileAuthor>
+        <S.ProfileDescription>{description}</S.ProfileDescription>
+        <S.ProfileAuthor></S.ProfileAuthor>
       </S.ProfileWrapper>
       
     ) 

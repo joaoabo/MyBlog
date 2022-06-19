@@ -4,8 +4,8 @@ const queries = require("./src/utils/algolia_queries")
 
 module.exports = {
   siteMetadata: {
-    title: `My Blog`,
-    description: `Meu blog para fins de estudo.`,
+    title: `Joao Antonio`,
+    description: `Um blog sobre desenvolvimento de WebSite.`,
     author: `@joaoabo`,
   },
   plugins: [

@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 export const ProfileWrapper = styled.section`
     color: #8899a6;
     display: flex;
-    margin-top: 60px;
+    margin-top: 40px;
     flex-direction: column;
 `
 
@@ -23,9 +23,9 @@ export const ProfileTitle = styled.h1`
 `
 
 export const ProfileDescription = styled.small`
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 300;
-    line-height: 1.4;
+    line-height: 1.8;
 `
 export const ProfileAuthor = styled.p`
     display: block;
