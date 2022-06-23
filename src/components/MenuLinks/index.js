@@ -13,6 +13,10 @@ const MenuLinks = () => (
             {links.map((link, i) => (
                 <S.MenuLinksItem key={i}>
                     <S.MenuLinksLink
+                        tcover
+                        direction="left"
+                        bg="#16202c"
+                        duration={0.6}
                         to={link.url}
                         target="_blank"
                         activeClassName="active">

@@ -1,14 +1,23 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
+import media from "styled-media-query"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const MenuTitle = styled.h1`
     font-size: 2.2rem;
     font-weight: 450;
     color: #8899a6;
     margin-top: 60px;
+
+    ${media.lessThan("large")`
+    display: none;
+  `}
 `
 export const MenuLinksWrapper = styled.nav`
     padding: 30px;
+
+    ${media.lessThan("large")`
+    display: none;
+  `}
 `
 
 export const MenuLinksList = styled.ul`
@@ -25,7 +34,7 @@ export const MenuLinksItem = styled.li`
     }
 `
 
-export const MenuLinksLink = styled(Link)`
+export const MenuLinksLink = styled(AniLink)`
     color: #8899a6;
     text-decoration: none;
     transition: color 0.5s;
