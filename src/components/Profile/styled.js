@@ -5,10 +5,10 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 export const ProfileWrapper = styled.section`
     color: var(--texts);
     display: flex;
-    margin-top: 40px;
+    
     flex-direction: column;
 `
-
+//margin-top: 40px;
 export const ProfileLink = styled(AniLink)`
     color: var(--texts);
     text-decoration:  none;
