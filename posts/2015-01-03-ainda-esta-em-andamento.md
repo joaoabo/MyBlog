@@ -4,6 +4,7 @@ title: ainda não sei
 description: tamuu vendo as paradas
 category: eu
 background: " #7AAB13 "
+image: "/assets/img/web-developer.png"
 ---
 
 # Lorem ipsum
