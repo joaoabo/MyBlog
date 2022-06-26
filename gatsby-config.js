@@ -90,6 +90,7 @@ module.exports = {
         icon: `static/assets/img/myBlog2.jpeg`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
