@@ -17,7 +17,7 @@ export const PostItemLink = styled(AniLink)`
   ${media.lessThan("large")`
     align-items: flex-start;
     flex-direction: column;
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
   `}
 `
 // border-bottom: 1px solid #38444d; caso deseja usar border nos posts
