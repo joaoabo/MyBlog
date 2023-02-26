@@ -8,7 +8,7 @@
     "algoliasearch": "^4.13.1",
     "dotenv": "^16.0.1",
     "gatsby": "^4.14.1",
-    "gatsby-plugin-algolia-search": "^0.5.0",
+    "gatsby-plugin-algolia-search": "^0.5.7",
     "gatsby-plugin-disqus": "^1.2.4",
     "gatsby-plugin-gatsby-cloud": "^4.14.0",
     "gatsby-plugin-image": "^2.14.1",
