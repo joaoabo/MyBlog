@@ -17,14 +17,14 @@ export const PostItemLink = styled(AniLink)`
   ${media.lessThan("large")`
     align-items: flex-start;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
   `}
 `
 // border-bottom: 1px solid #38444d; caso deseja usar border nos posts
 export const PostItemWrapper = styled.section`
   align-items: center;
   display: flex;
-  padding: 2rem 3rem;
+  padding: 1rem 1rem;
   width: 100%;
 
   body#grid & {
@@ -42,7 +42,7 @@ export const PostItemTag = styled.div`
   border-radius: 50%;
   color: #fff;
   display: flex;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 700;
   justify-content: center;
   min-height: 90px;
@@ -50,11 +50,11 @@ export const PostItemTag = styled.div`
   text-transform: uppercase;
 
   ${media.lessThan("large")`
-    border-radius: 0;
-    font-size: 1rem;
-    min-height: auto;
-    min-width: auto;
-    padding: .2rem .5rem;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    min-height: 50px;
+    min-width: 50px;
+    padding: .1rem .3rem;
     margin-bottom: .7rem;
   `}
 
@@ -83,13 +83,13 @@ export const PostItemDate = styled.time`
 `
 
 export const PostItemTitle = styled.h1`
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin: 0.2rem 0 0.5rem;
+  margin: 0.2rem 0px 0.3rem;
 `
 
 export const PostItemDescription = styled.p`
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 300;
   line-height: 1.2;
 `

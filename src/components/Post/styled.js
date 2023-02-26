@@ -20,9 +20,8 @@ export const PostTitle = styled.h1`
   margin: 1rem auto;
 
   ${media.lessThan("large")`
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     line-height: 1.1;
-    padding: 0 1rem;
   `}
 `
 
@@ -32,14 +31,14 @@ export const PostDescription = styled.h2`
   padding: 0 1.4rem;
 
   ${media.lessThan("large")`
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     line-height: 1.3;
     padding: 0 1rem;
   `}
 `
 
 export const PostDate = styled.p`
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 100;
   padding: 0 1.4rem;
 
@@ -51,7 +50,7 @@ export const PostDate = styled.p`
 export const MainContent = styled.section`
   margin: auto;
   max-width: 70rem;
-  padding: 2rem 5rem;
+  padding: 2rem 1rem;
   p,
   h1,
   h2,
